@@ -10,7 +10,7 @@ const Home = () => (
         
         {/* Flag Display */}
         <div className="my-4">
-           <img src="src\assets\New folder\20260309_184811.jpg" alt="TVK banner" style={{width: '100%'}} />
+           <img src="assets\New folder\20260309_184811.jpg" alt="TVK banner" style={{width: '100%'}} />
         </div>
 
         
