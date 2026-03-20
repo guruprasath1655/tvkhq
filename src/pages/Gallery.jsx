@@ -1,4 +1,11 @@
 import React, { useState } from 'react';
+import photo1 from '../assets/New folder/Oru Pera Varalaru _actorvijay _tvkvijayhq 💥👑___TVKVijay _WhistleForTVK _TVK _ThalapathyVijay _தமிழகவெற்றிக்கழகம்(W.jpg';
+import photo2 from '../assets/New folder/கழகத் தலைவர் மக்கள் சந்திப்பு❤️__🌍📌 _ தஞ்சாவூர் _ 04.03.2026 ____tvkvijay _2.jpg';
+import photo3 from '../assets/New folder/3.jpg';
+import photo4 from '../assets/New folder/WhatsApp Image 2026-03-09 at 10.50.55 AM.jpeg';
+import photo5 from '../assets/New folder/IMG_20250715_162007_579.jpg.jpeg';
+import photo6 from '../assets/New folder/தமிழக வெற்றிக் கழகம் சார்பில் மதுரை வடக்கு சட்டமன்ற தொகு(H.jpg';
+import photo7 from '../assets/New folder/VIJAY.png';
 
 const Gallery = () => {
   
@@ -28,15 +35,15 @@ const Gallery = () => {
 
  
   const photos = [
-    { id: 1, url: "src\\assets\\New folder\\Oru Pera Varalaru _actorvijay _tvkvijayhq 💥👑___TVKVijay _WhistleForTVK _TVK _ThalapathyVijay _தமிழகவெற்றிக்கழகம்(W.jpg", caption: "Vikravandi Conference Crowd" },
-    { id: 2, url: "src\\assets\\New folder\\கழகத் தலைவர் மக்கள் சந்திப்பு❤️__🌍📌 _ தஞ்சாவூர் _ 04.03.2026 ____tvkvijay _2.jpg", caption: "Thanjavur Farmers Meet" },
-    { id: 3, url: "src\\assets\\New folder\\3.jpg", caption: "Flag Hoisting at Panaiyur HQ" },
-    { id: 4, url: "src\\assets\\New folder\\WhatsApp Image 2026-03-09 at 10.50.55 AM.jpeg", caption: "Mamallapuram Women's Meet" },
-    { id: 5, url: "src\\assets\\New folder\\IMG_20250715_162007_579.jpg.jpeg", caption: "Policy Declaration Speech" },
-    { id: 6, url: "src\\assets\\New folder\\தமிழக வெற்றிக் கழகம் சார்பில் மதுரை வடக்கு சட்டமன்ற தொகு(H.jpg", caption: "Youth Wing Interaction" },
-    { id: 7, url: "src\\assets\\New folder\\VIJAY.png", caption: "Symbol launch" },
-    { id: 8, url: "src\\assets\\New folder\\தமிழக வெற்றிக் கழகம் சார்பில் மதுரை வடக்கு சட்டமன்ற தொகு(H.jpg", caption: "Youth Wing Interaction" },
-    { id: 9, url: "src\\assets\\New folder\\தமிழக வெற்றிக் கழகம் சார்பில் மதுரை வடக்கு சட்டமன்ற தொகு(H.jpg", caption: "Youth Wing Interaction" }
+    { id: 1, url: photo1, caption: "Vikravandi Conference Crowd" },
+    { id: 2, url: photo2, caption: "Thanjavur Farmers Meet" },
+    { id: 3, url: photo3, caption: "Flag Hoisting at Panaiyur HQ" },
+    { id: 4, url: photo4, caption: "Mamallapuram Women's Meet" },
+    { id: 5, url: photo5, caption: "Policy Declaration Speech" },
+    { id: 6, url: photo6, caption: "Youth Wing Interaction" },
+    { id: 7, url: photo7, caption: "Symbol launch" },
+    { id: 8, url: photo6, caption: "Youth Wing Interaction" },
+    { id: 9, url: photo6, caption: "Youth Wing Interaction" }
   ];
 
   return (

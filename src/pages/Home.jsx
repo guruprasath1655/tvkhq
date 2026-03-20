@@ -1,4 +1,5 @@
 import React from 'react';
+import bannerImg from '../assets/New folder/20260309_184811.jpg';
 
 const Home = () => (
   <div className="home-container">
@@ -10,7 +11,7 @@ const Home = () => (
         
         {/* Flag Display */}
         <div className="my-4">
-           <img src="src\assets\New folder\20260309_184811.jpg" alt="TVK banner" style={{width: '100%'}} />
+           <img src={bannerImg} alt="TVK banner" style={{width: '100%'}} />
         </div>
 
         

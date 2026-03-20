@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import leaderImg from '../assets/New folder/image.png';
 
 const Leader = () => {
   const ideologies = [
@@ -21,7 +22,7 @@ const Leader = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-4 text-center">
-              <img src="src\assets\New folder\image.png" className="rounded-circle border border-4 border-warning shadow-lg" style={{ width: '280px', height: '280px', objectFit: 'cover' }} alt="Leader Vijay" />
+              <img src={leaderImg} className="rounded-circle border border-4 border-warning shadow-lg" style={{ width: '280px', height: '280px', objectFit: 'cover' }} alt="Leader Vijay" />
             </div>
             <div className="col-md-8">
               <h1 className="display-3 fw-bold">Vijay</h1>
