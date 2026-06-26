@@ -6,6 +6,8 @@ import img2024Feb from '../assets/New folder/3.jpg';
 import img2024Oct from '../assets/New folder/4.jpg';
 import img2025 from '../assets/New folder/5.jpg';
 import img2026 from '../assets/New folder/WhatsApp Image 2026-03-09 at 10.50.55 AM.jpeg';
+// You can add your victory image path here when available
+import img2026Victory from '../assets/New folder/cm.jpg'; 
 
 const History = () => {
   const timelineData = [
@@ -57,46 +59,54 @@ const History = () => {
       title: "The 2026 Roadmap",
       desc: "At a major event in Mahabalipuram, TVK released its first set of promises, focusing on secular social justice and state rights ahead of the main polls.",
       img: img2026
+    },
+    {
+      year: "2026",
+      date: "May Assembly Polls",
+      title: "The Historic Revolution",
+      desc: "Marking a massive paradigm shift in Tamil Nadu political history, TVK won the assembly elections. Vijay took the oath as the Hon'ble Chief Minister, bringing his long social welfare journey to state governance.",
+      img: img2026Victory
     }
+    
   ];
 
   return (
-    <div style={{background: 'linear-gradient(rgba(123, 123, 123, 0.6), rgba(126, 126, 126, 0.5)), url("/assets/leader-banner.jpg") center/cover  '}}> 
-    <div className="container py-5">
-      <div className="text-center mb-5">
-        <h1 className="fw-bold display-4" style={{ color: '#800000' }}>Our Legacy</h1>
-        <p className="lead text-muted">A journey from social welfare to political revolution.</p>
-        <hr className="w-25 mx-auto border-warning border-3" />
-      </div>
+    <div style={{background: 'linear-gradient(rgba(123, 123, 123, 0.6), rgba(126, 126, 126, 0.5)), url("/assets/leader-banner.jpg") center/cover '}}> 
+      <div className="container py-5">
+        <div className="text-center mb-5">
+          <h1 className="fw-bold display-4" style={{ color: '#800000' }}>Our Legacy</h1>
+          <p className="lead text-dark fw-semibold">A journey from social welfare to political revolution.</p>
+          <hr className="w-25 mx-auto border-warning border-3" />
+        </div>
 
-      <div className="position-relative">
-        {/* Central Vertical Line (Visible on Desktop) */}
-        <div className="d-none d-lg-block position-absolute start-50 translate-middle-x h-100 border-start border-2 border-danger"></div>
+        <div className="position-relative">
+          {/* Central Vertical Line (Visible on Desktop) */}
+          <div className="d-none d-lg-block position-absolute start-50 translate-middle-x h-100 border-start border-2 border-danger"></div>
 
-        {timelineData.map((item, index) => (
-          <div key={index} className={`row align-items-center mb-5 ${index % 2 === 0 ? '' : 'flex-lg-row-reverse'}`}>
-            {/* Image Column */}
-            <div className="col-lg-5 text-center px-4">
-              <div className="overflow-hidden  shadow-lg mb-3">
-                <img src={item.img} alt={item.title} className="img-fluid hover-zoom" style={{ transition: '0.3s' }} />
+          {timelineData.map((item, index) => (
+            <div key={index} className={`row align-items-center mb-5 ${index % 2 === 0 ? '' : 'flex-lg-row-reverse'}`}>
+              {/* Image Column */}
+              <div className="col-lg-5 text-center px-4">
+                <div className="overflow-hidden shadow-lg mb-3 rounded">
+                  <img src={item.img} alt={item.title} className="img-fluid hover-zoom" style={{ transition: '0.3s', maxHeight: '350px', width: '100%', objectFit: 'cover' }} />
+                </div>
+              </div>
+
+              {/* Empty center gap for the line dot */}
+              <div className="col-lg-2 d-none d-lg-flex justify-content-center position-relative">
+                 <div className="rounded-circle bg-warning border border-danger border-4" style={{ width: '25px', height: '25px', zIndex: 2 }}></div>
+              </div>
+
+              {/* Content Column */}
+              <div className="col-lg-5 px-4 text-center text-lg-start">
+                <span className="badge bg-danger mb-2 fs-6">{item.year} - {item.date}</span>
+                <h3 className="fw-bold text-dark">{item.title}</h3>
+                <p className="text-dark-50 fw-medium bg-white bg-opacity-75 p-3 rounded shadow-sm">{item.desc}</p>
               </div>
             </div>
-
-            {/* Empty center gap for the line dot */}
-            <div className="col-lg-2 d-none d-lg-flex justify-content-center position-relative">
-               <div className="rounded-circle bg-warning border border-danger border-4" style={{ width: '25px', height: '25px', zIndex: 2 }}></div>
-            </div>
-
-            {/* Content Column */}
-            <div className="col-lg-5 px-4 text-center text-lg-start">
-              <span className="badge bg-danger mb-2">{item.year} - {item.date}</span>
-              <h3 className="fw-bold">{item.title}</h3>
-              <p className="text-muted">{item.desc}</p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
     </div>
   );
 };
