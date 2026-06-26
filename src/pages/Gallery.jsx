@@ -6,6 +6,8 @@ import photo4 from '../assets/New folder/WhatsApp Image 2026-03-09 at 10.50.55 A
 import photo5 from '../assets/New folder/IMG_20250715_162007_579.jpg.jpeg';
 import photo6 from '../assets/New folder/தமிழக வெற்றிக் கழகம் சார்பில் மதுரை வடக்கு சட்டமன்ற தொகு(H.jpg';
 import photo7 from '../assets/New folder/VIJAY.png';
+import photo8 from '../assets/New folder/cm day.webp';
+import photo9 from '../assets/New folder/cm.jpg';
 
 const Gallery = () => {
   
@@ -42,8 +44,8 @@ const Gallery = () => {
     { id: 5, url: photo5, caption: "Policy Declaration Speech" },
     { id: 6, url: photo6, caption: "Youth Wing Interaction" },
     { id: 7, url: photo7, caption: "Symbol launch" },
-    { id: 8, url: photo6, caption: "Youth Wing Interaction" },
-    { id: 9, url: photo6, caption: "Youth Wing Interaction" }
+    { id: 8, url: photo8, caption: "Political Revolution in 2026" },
+    { id: 9, url: photo9, caption: "Memorable day of victory" }
   ];
 
   return (
