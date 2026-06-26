@@ -10,6 +10,13 @@ const Leader = () => {
     { name: "Velu Nachiyar", role: "Bravery & Resistance", desc: "Symbol of Tamil courage and the fight for freedom." }
   ];
 
+  const policyInitiatives = [
+    { title: "Two-Language Formula", desc: "Strict adherence to Tamil and English, rejecting any form of language imposition while empowering the mother tongue." },
+    { title: "State Autonomy & Governance", desc: "Advocating for the elimination of the redundant Governor post and recovering education rights back to the State List." },
+    { title: "Decentralized Judiciary", desc: "Ensuring democratic access to justice and pushing for Tamil as an official language in court proceedings." },
+    { title: "Transparent Administration", desc: "Establishing a corruption-free digital governance model with accountability and a caste-free social framework." }
+  ];
+
   return (
     <div className="leader-container bg-light min-vh-100">
       {/* Hero Section */}
@@ -22,14 +29,15 @@ const Leader = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-4 text-center">
-              <img src={leaderImg} className="rounded-circle border border-4 border-warning shadow-lg" style={{ width: '280px', height: '280px', objectFit: 'cover' }} alt="Leader Vijay" />
+              <img src={leaderImg} className="rounded-circle border border-4 border-warning shadow-lg" style={{ width: '280px', height: '280px', objectFit: 'cover' }} alt="Chief Minister Vijay" />
             </div>
             <div className="col-md-8">
-              <h1 className="display-3 fw-bold">Vijay</h1>
-              <h3 className="text-warning">President, Tamilaga Vettri Kazhagam</h3>
+              <h1 className="display-3 fw-bold">C. Joseph Vijay</h1>
+              <h3 className="text-warning">Hon'ble Chief Minister of Tamil Nadu</h3>
+              <h5 className="text-white-50">President, Tamilaga Vettri Kazhagam</h5>
               <p className="lead mt-3 italic">"Pirappokkum Ella Uyirkkum — All are equal by birth."</p>
               <div className="mt-4">
-                <button className="btn btn-warning btn-lg fw-bold me-3"><a href="https://tvkmanifesto2026.com/home-en/#formsectn" target="_blank" className="text-white text-decoration-none">View Manifesto</a></button>
+                <a href="https://tvkmanifesto2026.com/home-en/#formsectn" target="_blank" rel="noopener noreferrer" className="btn btn-warning btn-lg fw-bold me-3 text-white text-decoration-none">View Manifesto</a>
                 <button className="btn btn-outline-light btn-lg">Watch Conference</button>
               </div>
             </div>
@@ -41,12 +49,13 @@ const Leader = () => {
       <div className="container">
         <div className="row mb-5">
           <div className="col-lg-8">
-            <h2 className="fw-bold mb-4" style={{ color: '#800000' }}>The Political Vision: Secular Social Justice</h2>
+            <h2 className="fw-bold mb-2" style={{ color: '#800000' }}>The Political Vision: Secular Social Justice</h2>
+            <h5 className="text-danger fw-bold mb-4">A Historic Political Shift for Tamil Nadu</h5>
             <p className="text-muted fs-5">
-              The TVK, under the leadership of Vijay, stands as a third-party alternative to the existing political landscape in Tamil Nadu. Our ideology is rooted in <strong>Secular Social Justice</strong>, a blend of Dravidian principles and Tamil nationalism.
+              The 2026 assembly elections marked a monumental turning point in Tamil Nadu's history, with TVK emerging under the leadership of Vijay to establish a new governing paradigm. Our ideology is rooted in <strong>Secular Social Justice</strong>, a blend of Dravidian principles and Tamil nationalism.
             </p>
             <p className="text-muted fs-5">
-              During the historic 2024 Vikravandi conference, our leader made it clear: 100% no compromise on communal harmony. Our goal for 2026 is to establish a corruption-free, transparent, and caste-free administration.
+              Fulfilling the promises made during the historic Vikravandi conference, our administration operates with 100% no compromise on communal harmony. The goal remains absolute: a corruption-free, transparent, and caste-free governance model for the welfare of all citizens.
             </p>
             
             <div className="p-4 bg-white border-5 border-danger shadow-sm my-4">
@@ -57,7 +66,7 @@ const Leader = () => {
           <div className="col-lg-4">
             <div className="card shadow-sm border-0 bg-white">
               <div className="card-body">
-                <h4 className="fw-bold mb-3" style={{ color: '#800000' }}>Key Goals for 2026</h4>
+                <h4 className="fw-bold mb-3" style={{ color: '#800000' }}>Key Governance Goals</h4>
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item">✔️ Abolition of NEET</li>
                   <li className="list-group-item">✔️ State Autonomy Rights</li>
@@ -67,6 +76,21 @@ const Leader = () => {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Administrative & Policy Pillars */}
+        <div className="mb-5">
+          <h2 className="fw-bold mb-4 text-center" style={{ color: '#800000' }}>Core Policy Pillars</h2>
+          <div className="row g-4">
+            {policyInitiatives.map((policy, idx) => (
+              <div className="col-md-6" key={idx}>
+                <div className="p-4 bg-white rounded shadow-sm border-start border-4 border-warning h-100">
+                  <h4 className="fw-bold mb-2" style={{ color: '#800000' }}>{policy.title}</h4>
+                  <p className="text-muted mb-0">{policy.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
