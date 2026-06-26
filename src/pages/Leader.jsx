@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import leaderImg from '../assets/New folder/image.png';
+import leaderImg from '../assets/New folder/profile.jpg';
 
 const Leader = () => {
   const ideologies = [
